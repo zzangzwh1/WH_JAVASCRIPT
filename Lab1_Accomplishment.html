@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonhyuk's Accomplishments</title>
+    <link rel="stylesheet" href="./Lab1.css">
+</head>
+<body id="acomp_body">
+    <header id="acomp_head">
+        <h1> Acoomplishment</h1>
+    </header>
+    <section id="acomp_section">
+        <ul class="prod-list">
+            <li> <img src="./images/Ball.jpg" alt="Basketball" onclick="window.location.href ='https://cchs.brsd.ab.ca/';">
+                <div class="caption" onclick="window.location.href ='https://cchs.brsd.ab.ca/';">
+                    <h1>Basketball</h1>
+                        <p>Played as a guard in high school
+                            and joined regional championship
+                        and when i was in grade 12 i was team leader. </p>  
+                                           
+                </div> 
+            </li>
+            <li> <img src="./images/Army.jpg" alt="Army"  onclick="window.location.href ='https://www.army.mil.kr/webapp/user/indexMain.do?siteId=army';">
+                <div class="caption"  onclick="window.location.href ='https://www.army.mil.kr/webapp/user/indexMain.do?siteId=army';">
+                    <h1>Military </h1>
+                        <p>Joined Military Service for 22months and i was a squad leader
+                             </p>                    
+                </div> 
+            </li>
+            <li> <img src="./images/intern.jpg" alt="intern"  onclick="window.location.href ='https://www.sweeper.or.kr/';">
+                <div class="caption"  onclick="window.location.href ='https://www.sweeper.or.kr/';">
+                    <h1>Internship</h1>
+                        <p>I had an internship at KH software in korea for 6month before i come back to NAIT.
+                            i worked as fullstack developer but mostly i spent time with css html and java 
+                            google </p>                    
+                </div> 
+            </li>
+            <li> <img src="./images/chef.jpg" alt="chef"  onclick="window.location.href ='https://greatkitchenparty.com/ca/';">
+                <div class="caption"  onclick="window.location.href ='https://greatkitchenparty.com/ca/';">
+                    <h1>Chef Competition</h1>
+                        <p>When i was working at butternut Tree i joined chef competition with chef scott
+                            where only top 10 restaurants in Alberta could come
+                        </p>                    
+                </div> 
+            </li>
+            <li> <img src="./images/bmi.jpg" alt="bmi"  onclick="window.location.href ='https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm';">
+                <div class="caption"  onclick="window.location.href ='https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm';">
+                    <h1>Diet</h1>
+                        <p>Last year i planned to diet and succeeded. i lost 15lbs and my fat percentage was under 10!</p>                    
+                </div> 
+            </li>
+          
+        </ul>
+
+
+        </section>
+    </section>
+    <nav class="nav">
+        <div class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+            <div class="line line-4"></div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item" onclick="window.location.href='./Lab1(landing).html';"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="Lab1(home).html" class="nav-link"> Wonhyuk</a> </li>
+            <li class="nav-item"><a href="Lab1_Accomplishment.html" class="nav-link">Accomplishments</a></li>
+            <li class="nav-item"><a href="Lab1_Employment.html" class="nav-link">Employment</a></li>
+            <li class="nav-item"><a href="LAb1_MyNait.html" class="nav-link">My Nait</a></li>
+            <li class="nav-item"><a href="LAB1_FeedBack.html" class="nav-link">Feedback</a></li>
+            
+        </ul>          
+        
+    </nav>
+    <footer id="acomp_footer">    
+        <script>document.write('<pre>&copy;2020 by wonhyuk cho\nLast Modified:' +
+            document.lastModified);</script><a href="./index.html">home</a>
+    </footer>
+</body>
+<script>
+    const menu = document.querySelector('.hamburger');
+    const navBar = document.querySelector('nav');
+    menu.addEventListener('click',() =>{
+        navBar.classList.toggle('change');
+    }); 
+
+</script>
+</html>

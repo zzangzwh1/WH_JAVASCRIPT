@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@100&display=swap');
+/* font-family: 'Major Mono Display', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+/* font-family: 'Fira Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+body{
+ font-family: 'Roboto Mono', monospace; 
+
+}
+header, footer, section, aside, nav{
+    border: 3px  black;
+    border-radius: 30px;
+    background-color:  #e9e9e9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    
+}
+header{
+    font-family: 'Roboto Mono', monospace; 
+    text-align: center;
+    background-color: orangered;
+}
+.bands {
+    font-family: Fira Mono;
+    border: 2px groove red;
+    border-radius: 20px;
+    padding: 20px;
+    /* height: 40vh;
+    width: 45vh; */
+}
+
+.alert{ 
+    display:flexbox; 
+    align-items:center;
+    justify-content:center;  
+    height: 40vh;
+}
+ #image_hidden{
+    display: none;
+} 
+
+#img_animate {  
+    
+    margin: auto;
+     height:38vh;
+    width: 100%;
+    background-image: url(./images/band6_music.jpg); 
+   background-position: center;
+   background-size: cover;
+  
+    transition: 2s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url(./images/band1_paragon.jpg);
+    }
+    20%{
+        background-image: url(./images/band2_karma.jpg);
+    }
+    40%{
+        background-image: url(./images/band3_brown.jpg);
+    }
+    60%{
+        background-image: url(./images/band4_run.jpg);
+    }
+    80%{
+        background-image: url(./images/band5_royalty.jpg)
+    }
+    100%{
+        background-image: url(./images/band6_music.jpg)
+    }
+}
+
+ /* img{
+    width: 50px;
+    height :100px;
+}  */
+.schedule{
+    font-family:Space Mono,monospace;
+    text-align: center;
+   
+}
+table{
+   margin :auto;
+  border :2px dashed blue;
+
+
+}
+th,td{
+    border: 2px dotted green;
+    text-align: center;  
+    
+}
+ .time{
+    background-color:#2ae27b ;
+} 
+.time:hover{
+    background-color: gray;
+}
+
+table:nth-child(odd):hover{
+    background-color:#218c50;
+}
+
+td:hover{
+    background-color: gray;
+}
+
+
+/* .day:hover{
+    background-color: gray;
+} */
+
+
+.entities{
+    font-family: Major Mono Display;
+    background-color: #0ab9e8;
+}
+footer{
+    text-align: center;
+    border-radius: 10px;
+    font:smaller;
+    background-color: pink;
+
+}
+ @media screen and (min-width: 800px){
+    #grid{
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        gap : 10px;
+        grid-template-areas: 
+                            " grid_header"
+                            "n_bandList"                             
+                            "s_img"
+                             "a_img"
+                             "s_table"
+                             "a_order"
+                             "f_finish";
+                 
+    
+    }   
+    
+    header{
+        grid-area: grid_header;
+    }
+
+   
+    section{
+        border-radius: 10px;    
+    
+    
+    }
+    aside{
+        border-radius: 10px;
+    }
+    #nav_bandList {
+        grid-area: n_bandList;    
+
+    }
+    #section_Img {
+        grid-area: s_img;
+  
+
+    }
+    #aside_Img {
+        grid-area: a_img;
+
+    }
+    #section_Table{
+        grid-area: s_table;
+    }
+    #aside_Order {
+        grid-area: a_order;
+    }
+    #footer_Finish{
+        grid-area: f_finish;
+    }
+
+    img{
+        width: 25vw;
+     
+      
+    }
+
+
+} 
+@media screen and (min-width: 850px){
+    #grid{
+        display: grid;
+        grid-template-columns: 30vw 45vw;
+        gap : 10px;
+        grid-template-areas: 
+                            "grid_header grid_header grid_header grid_header "
+                            "n_bandList s_img s_img  a_img  " 
+                            ". s_img s_img a_order "
+                            "s_table s_table s_table . "
+                            "s_table s_table s_table f_finish";                       
+                            background-color: gray;
+                  
+
+    }
+    header, footer, section, aside, nav{
+        border: 3px solid black;
+    
+    }
+    header{
+        grid-area: grid_header;
+        font-family: 'Major Mono Display', monospace; 
+      
+    }
+     img{
+         height: 240px;
+         width: 220px;
+
+
+    } 
+    section{
+        border-radius: 10px;
+    }
+    aside{
+        border-radius: 10px;
+    }
+    #nav_bandList {
+        grid-area: n_bandList;
+       
+           }
+    .bands,a{
+        color: black;
+        text-decoration: none;
+    }
+   
+    a:hover{
+        color: red;
+    }
+    #section_Img {
+        grid-area: s_img;
+
+    }
+    #aside_Img {
+        grid-area: a_img;
+
+    }
+    #section_Table{
+        grid-area: s_table;
+    }
+    #aside_Order {
+        grid-area: a_order;
+    }
+    #footer_Finish{
+        grid-area: f_finish;
+    }
+
+
+   
+
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+/* font-family: 'RocknRoll One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+/* font-family: 'Orbitron', sans-serif; */
+body{
+    display: grid;
+    
+    grid-template-areas:
+                        " g_header  g_header  g_header  g_header"
+                        " .  g_section  g_section . "
+                        " g_footer  g_footer  g_footer  g_footer ";
+
+                        font-family: Orbitron ;
+                        background-color: rgb(212, 211, 211);
+}
+header{
+   grid-area: g_header;
+
+   background-color: blanchedalmond;
+
+}
+h1{
+     text-align: center; 
+    text-shadow: 2px 2px black;
+    color: white;
+}
+section{
+    grid-area: g_section;
+    display: grid;
+    grid-template-columns: 15vw 30vw 10vw;
+   
+}
+img{
+    grid-column: 2/4;
+    width: 1000px;
+    height: 800px;
+}
+div{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+    grid-template-rows:  repeat(3,auto);
+}
+#previous_btn{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 70%;
+    background:url("./images/left.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#puase_play_btn{
+    grid-column: 3/4;
+    grid-row: 3/5;
+    width: 70%;
+    background:url("./images/start.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+}
+#next_btn{
+    grid-column: 5/7;
+    grid-row: 1/2;
+    width: 70%;
+    background:url("./images/right.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#lbl_Result{
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+
+
+footer{
+    grid-area: g_footer;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: Orbitron ;
+  
+    color: black;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        display: grid;
+        
+        grid-template-areas:
+                            "g_header"
+                            " g_section "
+                            " g_footer  ";
+    
+                            font-family: Orbitron ;
+                            background-color: rgb(212, 211, 211);
+    }
+    header{
+       grid-area: g_header;
+    
+       background-color: blanchedalmond;
+    
+    }
+ 
+    section{
+        grid-area: g_section;
+        display: grid;
+        grid-template-columns: 15vw 30vw 10vw;
+       
+    }
+    img{
+        grid-column: 1/4;
+        width: 500px;
+        height: 500px;
+    }
+    div{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+        grid-template-rows:  repeat(3,auto);
+    }
+    #previous_btn{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 70%;
+        background:url("./images/left.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+    }
+    #puase_play_btn{
+        grid-column: 3/4;
+        grid-row: 3/5;
+        width: 100%;
+        background:url("./images/start.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+     
+    }
+    #next_btn{
+        grid-column: 5/7;
+        grid-row: 1/2;
+        width: 70%;
+        background:url("./images/right.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+    }
+    #lbl_Result{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    
+    
+    
+    Footer{
+        grid-area: g_footer;
+        background-color: blanchedalmond;
+        text-align: center;
+        font-family: Orbitron ;
+      
+        color: black;
+        font-size: 25px;
+    }
+    
+
+}

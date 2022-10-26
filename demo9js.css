@@ -1,0 +1,33 @@
+@import url('//fonts.googleapis.com/css?family=Sniglet|Boogaloo|Slackey|Comfortaa&effect=3d');
+
+body, div, button {
+	font-family: 'Sniglet', sans-serif;
+	font-size: x-large;
+}
+button { width : 100%; }
+h1, h2, h3 {
+	font-family: 'Comfortaa', cursive;
+}
+#status {
+  font-family: 'Boogaloo', sans-serif; 
+  padding : 20px
+}
+.text-center {
+  text-align: center;
+}
+.panel {
+  display : grid;
+  grid-template-columns : 2fr 3fr;
+}
+.boldie:nth-child(odd) {
+  font-weight: bold;
+  color: red;
+}
+#fly { /* My Floating DIV */
+  /* Relative => relative to parent, Absolute => Screen Oriented */
+  position: absolute; 
+  /* Depth, smaller are below bigger values, usually set small for background or big to be on top*/
+  z-index: -1;
+  left: 100px; 
+  top: 50px; 
+}

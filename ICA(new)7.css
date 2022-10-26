@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+/* font-family: 'Passion One', cursive; */
+body{
+    display: grid;
+    grid-template-rows: 20% auto 10%;
+    background-color: #dcdcdc;
+}
+header{
+    grid-row: 1/2;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #dda0dd;
+    font-family: 'Londrina Shadow', cursive;
+}
+#sec{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: auto auto;
+}
+#image{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: yellow;
+}
+#main_image{
+    width: 100%;
+    height: 55vh;
+}
+#btns{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#d_previous_btn{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: left;
+    align-content: center;
+}
+#image_desc{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: cornflowerblue;
+    justify-content: left;
+    align-content: center;
+}
+#lbl_image_desc{
+    font-family: 'Passion One', cursive;
+}
+#d_next_btn{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-content: center;
+    justify-content: right;
+}
+#d_puase_play_btn{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+    align-content: center;
+}
+footer{
+    display: grid;
+    grid-row: 3/4;
+    justify-content: center;
+    align-content: center;
+    background-color: #dda0dd;
+}
+#previous_btn{
+    width: 5vw;
+    height: 5vh;
+    background:url("./images/previous_btn.PNG");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#next_btn{
+    width: 5vw;
+    height: 5vh;
+    background:url("./images/next_btn.PNG");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#puase_play_btn{
+    width: 5vw;
+    height: 5vh;
+    background:url("./images/puase_play_btn.PNG");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+input{
+    border: none;
+}

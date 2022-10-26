@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonhyuk's Home</title>
+    <link rel="stylesheet" href="./Lab1.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="Wh_whole">
+    
+    <header id="home_header">
+      
+            <h1 id="wh_H"><i class="fa fa-user"></i> About Wonhyuk</h1>
+        </header>
+
+        <section id="home_section">
+            <img src="./images/wh.jpg" alt="Wonhyuk" id="wh_img" >
+        <p id="wh_desc"> Welcome to this Webpage!
+ I was born in South Korea, September 17 1990 and moved to canada
+ when i was 16 yrs old. I lived in Calgary and went high school called 
+ "St Francis high school" after graduating high school i went to GBC(George Brown)
+ in Toronto. Thankfully, i have some experience visiting other countries like USA and
+ China. I loved there as i love to live in Canada. 
+ My Top 3 Tibits are PecanPie,Macraon and OreoCheese Cake </p>
+            <ol id="wh_ol">
+               
+                <li ><img src="./images/pecan pie.jpg"  class="wh_tibits" alt="PecanPie"> </li>
+                <li ><img src="./images/macaron.jpg"   class="wh_tibits" alt="Macaron"></li>
+                <li ><img src="./images/oreo.jpg"      class="wh_tibits" alt="Oreo"> </li>
+                
+            </ol>
+        </section>
+        <nav class="nav">
+            <div class="hamburger">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item" onclick="window.location.href='./Lab1(landing).html';"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="Lab1(home).html" class="nav-link"> Wonhyuk</a> </li>
+                <li class="nav-item"><a href="Lab1_Accomplishment.html" class="nav-link">Accomplishments</a></li>
+                <li class="nav-item"><a href="Lab1_Employment.html" class="nav-link">Employment</a></li>
+                <li class="nav-item"><a href="LAb1_MyNait.html" class="nav-link">My Nait</a></li>
+                <li class="nav-item"><a href="LAB1_FeedBack.html" class="nav-link">Feedback</a></li>
+                
+            </ul>          
+            
+        </nav>
+        <footer id="home_footer">    
+            <script>document.write('<pre>&copy;2020 by wonhyuk cho\nLast Modified:' +
+                document.lastModified);</script><a href="./index.html">home</a>
+        </footer>
+        
+
+  
+
+</body>
+<script>
+    const menu = document.querySelector('.hamburger');
+    const navBar = document.querySelector('nav');
+    menu.addEventListener('click',() =>{
+        navBar.classList.toggle('change');
+    }); 
+
+</script>
+</html>

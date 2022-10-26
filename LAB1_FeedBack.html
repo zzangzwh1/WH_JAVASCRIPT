@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonhyuk's FeedBack</title>
+    <link rel="stylesheet" href="./Lab1.css">
+</head>
+<body id="feeback_body">
+    <header id="feeback_header">
+        <h1>FeedBack</h1>
+    </header>
+    <form action="https://thor.net.nait.ca/~demo/cmpe2000/ica04_formtest.php" method="POST" id="feeback_header_form">
+        <input type="hidden" name="Invisible" value="cmpe2000">   
+        <section class="f_name">
+        
+        <label for="user" class="firstName" id="feedbac_name">UserName: 
+             <input id="user" class="result" type="Text" name="UserName"  placeholder="Enter Username" required >
+            </label> 
+        </section>
+            <section class="Email">
+        <label for="email" class="email" id="feedbac_email">Email Address:
+             <input id="email" class="result" type="email" name="email" placeholder="Enter your Email :" required >
+            </label>
+            </section>
+            <section class="address">
+                <label for="add" class="addRess">Address:
+                     <input id="add" class="result" type="text" name="address" placeholder="Enter your Address " required >
+                 
+                    </label>
+                    </section>
+                    <section class="phone">
+                        <label for="cell" class="cellPhone">Phone Number:
+                             <input id="cell" class="pHone" type="number" name="phone" placeholder="Enter your Number" required >
+                            </label>
+                            </section>
+                    <section class="field">
+                        <fieldset id="cell">
+                            <legend> <label for="zzz" > Your Gender: </label></legend>
+                                <input type="radio" name="gender" value="men" required id="zzz"><label> Male</label> 
+                                <input type="radio" name="gender" value="woman" required> <label> Female</label>
+                                            
+                            </fieldset>    
+                        </section>     
+                    <section class="select">
+                        <label id="choice" for="grade"> Your Grade : </label>            
+                              <select name="grade" id="grade" >
+                                        <option value="excellent">Excellent!</option>
+                                        <option value="good">Good!</option>
+                                        <option value="notbad">Not Bad!</option>
+                                        <option value="bad">Bad!</option>
+                        </select>
+                        </section>
+
+                        <section class="light" >
+                            <label for="student" >Students</label>         
+                            <input type="checkbox" name="Students" id="student" checked >
+                    </section>
+             
+                            
+                        <section class="dateOfBirth">
+                            <label for="start">Date of Birth:</label>
+
+                                <input type="date" id="start" name="date"
+                                    value="1990-09-17"
+                                    min="1978-01-01" max="2021-02-09" >
+                                 </section>
+                        
+                                
+                         
+                        <section class="myNait_form_textArea">
+                           <label for="textArea">Text Area:  </label>
+                           <textarea name="textArea" id="textArea" cols="30" rows="10" maxlength="100">
+                               input texts that you want to say something! only 100words allowed!
+                           </textarea>
+                        </section>
+                       
+      <section class="reset_btn">
+
+          <input type="reset" value="Reset" class="result" id=btn1>
+        </section>
+        <section class="submit_btn">
+
+            <input type="submit" value="Submit" class="result" id="btn2">
+        </section>
+    
+    </form>
+    <nav class="nav">
+        <div class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+            <div class="line line-4"></div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item" onclick="window.location.href='./Lab1(landing).html';"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="Lab1(home).html" class="nav-link"> Wonhyuk</a> </li>
+            <li class="nav-item"><a href="Lab1_Accomplishment.html" class="nav-link">Accomplishments</a></li>
+            <li class="nav-item"><a href="Lab1_Employment.html" class="nav-link">Employment</a></li>
+            <li class="nav-item"><a href="LAb1_MyNait.html" class="nav-link">My Nait</a></li>
+            <li class="nav-item"><a href="LAB1_FeedBack.html" class="nav-link">Feedback</a></li>
+            
+        </ul>          
+        
+    </nav>
+      
+   <footer id="feeback_footer">
+    <script>document.write('<pre>&copy;2020 by wonhyuk cho\nLast Modified:' +
+        document.lastModified);</script><a href="./index.html">home</a>
+   </footer>
+    
+</body>
+<script>
+    const menu = document.querySelector('.hamburger');
+    const navBar = document.querySelector('nav');
+    menu.addEventListener('click',() =>{
+        navBar.classList.toggle('change');
+    }); 
+
+</script>
+</html>

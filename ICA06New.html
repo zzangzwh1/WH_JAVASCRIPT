@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA6</title>
+    <script src="ICA6.JS"></script>
+    <link rel="stylesheet" type="text/css" href="ICA6.css">
+</head>
+<body>
+    <header>
+        <h1>ica06 Motorcycle Purchase Form</h1>
+    </header>
+    <form name="myForm" action="https://thor.net.nait.ca/~demo/cmpe2000/ica04_formtest.php" Method="Get">
+   
+        <label id="lb_brandselector">Brand:</label>
+  
+        <div id="input_brand">
+            <select name="brand" size="5" id="brand_list">
+                <option value="">Please Pick One</option>
+                <option value="Honda">Japanese</option>
+                <option value="Ducati">European</option>
+                <option value="Harley">American</option>
+            </select>
+            <img id="brand_img" >
+        </div>
+        <label id="lb_model">Model:</label>
+        <div id="input_model">
+            <div>
+                <input type="radio" name="model" id="radio_scooter" value="5000">
+                <label id="lb_scooter" for="radio_scooter">Scooter</label>
+            </div>
+            <div>
+                <input type="radio" name="model" id="radio_naked" value="10000">
+                <label id="lb_naked" for="radio_naked">Naked</label>
+            </div>
+            <div>
+                <input type="radio" name="model" id="radio_rocket" value="15000">
+                <label id="lb_rocket" for="radio_rocket">Rocket</label>
+            </div>
+        </div>
+        <label id="lb_options">Options:</label>
+        <div id="input_options">
+            <div>
+                <input type="checkbox" name="ABS" value="200" id="checkbox_abs">
+                <label id="lb_abs" for="checkbox_abs">Automatic Braking System</label>
+            </div>
+            <div>
+                <input type="checkbox" name="TCS" value="300" id="checkbox_tcs">
+                <label id="lb_tcs" for="checkbox_tcs">Traction Control System</label>
+            </div>
+            <div>
+                <input type="checkbox" name="FMM" value="500" id="checkbox_fmm">
+                <label id="lb_fmm" for="checkbox_fmm">Flight Mode Mapping</label>
+            </div>
+        </div>
+        <label id="lb_prepayment">Pre-Payment:</label>
+        <input type="text" name="downpayment" id="input_prepament" value="0">
+        
+        <input type="hidden" name="totalcost" value="" >
+        <output id="status"></output>
+        
+        <input type="submit" name="bt_submit" value="Let's buy" id="btn_submit">
+        
+    </form>
+    <footer>
+        <div id="Footer"></div>
+    </footer>
+</body>
+</html>

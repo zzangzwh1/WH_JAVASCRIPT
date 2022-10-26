@@ -1,0 +1,51 @@
+
+    #grid{
+        display: grid;
+        border: 4px solid black;
+        grid-template-columns:auto;
+ 
+        text-align: center;
+        gap :5px;
+        grid-template-areas: 
+                            "h h f f"
+                            "h h f f"                                                                                         
+                            "t o o s"
+                            "t o o s";
+
+    }
+
+    #side{
+        grid-area: s;
+        background-color: blue;
+        height: 50vh;
+       color : red;
+      
+    }
+    #hello{
+        grid-area: h;
+        background-color: green;
+        height:50vh;
+        
+    }
+    #from{
+        grid-area: f;
+        background-color: yellow;
+      
+    }
+    #other{
+        grid-area: o;
+        background-color: purple;
+
+    }
+    #the{
+        grid-area: t;
+        background-color: pink;
+      
+    }
+    div{
+        position: relative;
+        top: 200px;
+    }
+
+
+

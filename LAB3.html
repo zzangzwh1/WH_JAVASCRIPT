@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lab3.js"></script>
+
+    <link rel="stylesheet" href="lab3.css">
+   
+    <title>LAB3-JSON</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Lab03 Json-O-tron</h1>
+    </header>
+    <section>
+        <label for="tag_name">Tag Name : </label>
+        <input type="text" placeholder="togDesc to Add" id="tagName" >
+        <label for="tag_min">Minimum : </label>
+        <input type="text" id="tag_min" placeholder="Minimum Tag Value">
+        <label for="tag_max">Maximum :</label>
+        <input type="text" id="tag_max" placeholder="Maximum Tag Value">
+    
+    
+
+            <button id="Tag"> Add Tag</button>   
+     
+            <button id="getAll"> Get ALL</button>    
+
+        <label for="tag_filter"> Tag by Filter</label>
+        <input type="text" id="tag_desc" placeholder="Tag Description Filter">
+
+
+            <button id="Filter">Filter</button>
+     
+        <select name="" id="selectFilter"></select>
+        <button id="History">Get Historical</button>
+       
+        <button id="Live">GetLive</button>
+  
+
+            <label for="liveCheckbox" id="liveLbl">Live :</label>
+            <input type="checkbox" id="liveCheckbox">
+
+
+    </section>
+    <nav>
+        <div id="results">
+       <div id="results2">
+           No Div ContentYet
+
+       </div>
+
+          
+            <table id="resultTable"></table>
+            <!-- <tr>
+                <td><label for="">id</label></td>
+                <td><label for="">tag</label></td>
+                <td><label for="">min</label></td>
+                <td><label for="">max</label></td>
+                
+            </tr> -->
+            <!-- <tr>
+                <td> <label for="">tdfds</label> </td>
+            </tr> -->
+        </div>
+    </nav>
+    <footer>
+        <h2>     &copy;2021 Wonhyuk Cho<br/>
+            <script>document.write('Last Modified:' + document.lastModified);</script></h2>
+            <div id="Footer"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    display:grid;
+    grid-template-rows: 20vh 50px 50vh 30px;
+    text-align: center;
+}
+
+header {
+    background-color: darkseagreen;
+}
+
+nav {
+    background-color: chartreuse;
+}
+
+section {
+    background-color: bisque;
+}
+
+footer {
+    background-color: cadetblue;
+}

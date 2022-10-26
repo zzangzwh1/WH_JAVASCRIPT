@@ -1,0 +1,75 @@
+body{
+    background-color: pink;
+}
+img{
+    width: 96vh;
+    height: 400px;
+
+}
+.eric{
+    border: blue 5px outset;
+}
+.eric2{
+    border: red 5px inset;
+}
+h1,section{
+    text-align: center;
+}
+
+@media screen and (min-width:800px){
+    #grid{
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        gap: 10px;
+        grid-template-areas: "e p" "hnl yyz" "hux v";
+    }
+    img{
+       width :40vw;
+       /*  this means 40% screem width */
+      
+    }
+    section{
+        border: 2px;
+    }
+    #yeg{
+        grid-area: e;
+    }
+    #hnl{
+        grid-area: hnl;
+    }
+    #hux{
+        grid-area: hux;
+    }
+    #yvr {
+        grid-area: v;
+    }
+    #yyz {
+        grid-area : yyz;
+    }
+    #cdg{
+        grid-area: p;
+    }
+    section{
+        border:2px solid purple;
+    }
+}
+@media screen and (min-width:1200px){
+    #grid{
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        gap: 10px;
+        grid-template-areas: "e e e" "v yyz hux";
+    }
+    img{
+        width :25vw;
+        /*  this means 40% screem width */
+       
+     }
+     #yeg>img {
+         width: 90vw;
+         border-radius: 100%;
+     }
+     #hux, #hnl{
+         display:none
+     }
+}

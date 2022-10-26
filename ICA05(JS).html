@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA5</title>
+    <link rel="stylesheet" type="text/css" href="(ICA05)style.css">
+    <script src="ICA5.js"></script>
+</head>
+<body id="Body">
+    <header>
+        <h2>ica05 Javascript Intro</h2>
+    </header>
+    <section id="sec_form">
+        <form name="myForm" action="" Method="Get" id="my_form">
+            <label for="btn_redirect" id="lb_redirect">Redirect using location: </label>
+            <button type="button" id="btn_redirect" name="redirect"><img src="./images/Google-Chrome-icon.png"></button>
+            <label id="lb_back" for="btn_bac">Back 1 in History: </label>
+            <button type="button" id="btn_back" name="back">Reverse</button>
+            <label id="lb_Agent" for="btn_Agent">Secret Agent, Man: </label>
+            <button type="button" id="btn_Agent">Whose my Daddy</button>
+            <label id="lb_Dims" for="Dims_text_btn">Current Dimensions: </label>
+            <section id="Dims_text_btn"  >
+                <button type="button" id="btn_Dims" name="dims">Show Dims</button>
+                <input type="text" name="textbox" id="text_Dims">
+            </section>
+            <label id="lb_Click" >Click Counter: </label>
+            <button type="button" id="btn_Click" onclick="clickcount()">Count Me !!!</button>
+            <script>
+                var count = 0;
+                function clickcount() {
+                    count += 1;
+                    alert("Click Count:" + count);
+                }
+            </script>
+            <label id="lb_prompt">Prompt Test: </label>
+            <button type="button" id="btn_prompt" name="Prompt">?</button>
+            <label id="lb_groovy">Groovy Man: </label>
+            <button type="button" id="btn_groovy">Spaced Out</button>
+            <label id="lb_tablize">Make a Table: </label>
+            <section id="tableize_range_btn">
+                <section id="row_inout">
+                    <input type="range" id="range_row" name="range" min="-1" max="16" step="1" value="6">
+                    <output id="row_val">6</output>
+                </section>
+                <section id="col_inout">
+                    <input type="range" id="range_column" name="range" min="-1" max="16" step="1" value="13">
+                    <output id="col_val">13</output>
+                </section>
+                <button type="button" id="btn_tablize">Tablize</button>
+            </section>
+        </form>
+    </section>
+    <section id="sec_table">
+        <div id="table"></div>
+    </section>
+    <footer id="myNait_footer">    
+        <script>document.write('<pre>&copy;2020 by wonhyuk cho\nLast Modified:' +
+        document.lastModified);</script><a href="./index.html">home</a>
+</footer>
+</body>
+</html>

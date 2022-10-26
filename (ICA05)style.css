@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+img{
+    height: 20px;
+    width: 20px;
+}
+table{
+    border: dashed blue 2px;
+    border-spacing: 5px;
+}
+.colored_td{
+    background-color: chartreuse;
+}
+#Body{
+    height: 98vh;
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    row-gap: 2vh;
+    background-color:#bebebe;
+    grid-template-areas: "header header"
+                         "form form"
+                         "form form"
+                         "form form"
+                         "sec_table sec_table"
+                         "footer footer";
+}
+header{
+    grid-area: header;
+    background-color: blue;
+    font-family: 'Londrina Shadow', cursive;
+    color: #bebebe;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#sec_form{
+    grid-area: form;
+    display: grid;
+    grid-template-areas: "myform";
+}
+ #my_form{
+    grid-area: myform;
+    background-color: #5A78AF;
+    display: grid;
+    justify-self: center;
+    row-gap: 2vh;
+    width: 90%;
+    grid-template-columns: 48% auto 48%;
+    grid-template-rows: repeat(8,auto);
+} 
+#lb_redirect{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    align-content: center;
+}
+#btn_redirect{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#lb_back{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    align-content: center;
+}
+#btn_back{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#lb_Agent{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    align-content: center;
+}
+#btn_Agent{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#lb_Dims{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    align-content: center;
+}
+#Dims_text_btn{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 40% 3% 40% auto;
+}
+#btn_Dims{
+    grid-column: 1/2;
+}
+#text_Dims{
+    grid-column: 3/4;
+}
+#lb_Click{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    display: grid;
+    align-content: center;
+}
+#btn_Click{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+#lb_prompt{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: grid;
+    align-content: center;
+}
+#btn_prompt{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+#lb_groovy{
+    grid-column: 1/2;
+    grid-row: 7/8;
+    display: grid;
+    align-content: center;
+}
+#btn_groovy{
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+#lb_tablize{
+    grid-column: 1/2;
+    grid-row: 8/9;
+    display: grid;
+    align-content: center;
+}
+#tableize_range_btn{
+    grid-column: 3/4;
+    grid-row: 8/9;
+    display: grid;
+    column-gap: 3px;
+    grid-template-columns: 50% 30% auto;
+    grid-template-rows: repeat(2,auto);
+}
+#row_inout{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 80% 5% auto;
+}
+#range_row{
+    grid-column: 1/2;
+    width: 100%;
+}
+#row_val{
+    grid-column: 3/4;
+}
+#col_inout{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 80% 5% auto;
+}
+#range_column{
+    grid-column: 1/2;
+    width: 100%;
+}
+#col_val{
+    grid-column: 3/4;
+}
+#btn_tablize{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#sec_table{
+    grid-area: sec_table;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+}
+#table{
+    grid-column: 2/3;
+    font-family: 'Oswald', sans-serif;
+}
+#my_table{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+label{
+    color: white;
+    text-align: right;
+}
+button,output{
+    font-family: 'Oswald', sans-serif;
+}
+output{
+    color: white;
+}
+span{
+    font-weight: bold;
+}
+@media screen and (min-width: 800px){
+    #Body{
+        height: 98vh;
+        display: grid;
+        grid-template-areas: "header header"
+                             "form form"
+                             "form form"
+                             "form form"
+                             "sec_table sec_table"
+                             "footer footer";
+                            }
+        
+        header{
+            grid-area: header;
+        }
+        #sec_form{
+            grid-area: form;
+            display: grid;
+            grid-template-areas: "myform";
+        }
+        #my_form{
+            grid-area: myform;
+            width: 70%;
+        } 
+        #sec_table{
+            grid-area: sec_table;
+            display: grid;
+            grid-template-columns: 30% auto 30%;
+        }
+        footer{
+            grid-area: footer;
+        }
+    
+}

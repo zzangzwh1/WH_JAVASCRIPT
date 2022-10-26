@@ -1,0 +1,388 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&display=swap');
+/* font-family: 'PT Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Montserrat:wght@300&family=PT+Sans&display=swap');
+/* font-family: 'Lemonada', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lemonada:wght@300&family=Montserrat:wght@300&family=PT+Sans&display=swap');
+/* font-family: 'Crimson Text', serif; */
+
+body{ 
+   
+    height: 100%;
+    width: 100%;
+ 
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+
+    background-color: gray;
+  
+  
+}
+header{
+ grid-column: 1/4;
+
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 35px;
+
+  
+}
+h2{
+    color: white;
+    text-align: center;
+}
+a{
+    color: red;
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+    font-size: larger;
+        
+    
+}
+
+section{
+    grid-column: 1/4;
+ 
+    font-family: 'Montserrat';
+    font-size: large;  
+
+}
+
+#section_butter{
+    display: grid;
+    grid-template-columns: 15vw 33vw 33vw;
+    grid-template-rows: 10vh 33vh 33vh;
+   background-image: url(./images/butternut.jpg);
+
+    background-size: cover;
+ 
+    background-position: bottom;
+
+
+    transition: 4s;
+    animation-name: butter;
+    animation-direction: alternate;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    border:2px solid red;
+  
+
+}
+@keyframes butter{
+20%{
+    background-image: url(./images/butter1.jpg);
+}
+40%{
+    background-image: url(./images/butter2.jpg_large);
+}
+60%{
+    background-image: url(./images/butter3.jpg);
+}
+80%{
+    background-image: url(./images/butter4.jpg);
+}
+100%{
+    background-image: url(./images/butter5.jpg)
+}
+}
+
+table{
+   
+background-color: yellow;
+
+grid-column: 2/4;
+ grid-row: 2/4;
+}
+#secion_table:hover{
+    background-color: transparent;
+    color: yellow;
+    
+}
+
+
+#section_Mikado{
+    background-image: url(./images/Mikado.jpg);
+ 
+     background-size: cover;
+ 
+     background-position: bottom;
+     border:2px solid red;
+     display: grid;
+      grid-template-columns: 15vw 33vw 33vw;
+      grid-template-rows: 15vh 33vh 33vh;
+ 
+    
+
+ }
+ 
+ 
+
+ #section_lalonde{
+    background-image: url(./images/lalonde.jpg);
+ 
+     background-size: cover;
+
+     background-position: bottom;
+     border:2px solid red;
+  
+     display: grid;
+     grid-template-columns: 15vw 33vw 33vw;
+     grid-template-rows: 15vh 33vh 33vh;
+     
+ }
+
+
+footer{
+    /* grid-area: grid_footer; */
+    grid-column: 1/5;
+    grid-row: 4/5;
+   
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-color: gray;
+}
+
+
+table{
+   
+     width: 50%;
+    border: 1px solid black;
+    background-color: yellow;
+    /* grid-column: 2/3; */
+
+
+} 
+table:hover{
+    background-color: transparent;
+    border: 1px solid red; 
+    color: yellow;
+}
+tr,th,td{
+      
+    border: 1px solid black; 
+}
+tr:hover{
+    border: 1px solid red; 
+
+
+}
+td:hover{
+    border: 1px solid red; 
+  
+}
+th:hover{
+    border: 1px solid red; 
+  
+}
+
+/* * menubar */ 
+
+.hamburger{
+    width: 45px;
+    height: 35px;
+
+    position: fixed;
+    top: 50px;
+    right: 80px;
+    cursor: pointer ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line{
+   width: 100%;
+   height: 3px;
+   background-color: white;
+   transition: all 0.7s;
+}
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-6px,6px);
+    background-color: white;
+}
+.change .line-2{
+transform: rotateZ(180deg);
+background-color: white;
+}
+
+
+.change .line-3{
+    transform: rotateZ(405deg) translate(-6px,-6px);
+    background-color: white;
+}
+.change .line-4{
+    transform: rotateZ(450deg)  translate(-16px,0px);
+}
+.nav{
+    
+    height:100%;
+    background-color: transparent;
+    position: fixed;
+    top :-35px;
+    right:-340px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: right 1s;
+}
+.change{
+    right :0;
+}
+.nav-list{
+    text-align: right;
+
+}
+.nav-item{
+    list-style: none;
+    margin: 30px;
+    font-size: 30px;
+   
+  
+}
+ .nav-link{
+    text-decoration: none;
+    font-weight: 100;  
+    font-size :25px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 0;
+
+} 
+
+.nav-link::before,
+.nav-link::after{
+    content :""; 
+    width: 100%;
+    height : 1px;
+    background-color: red;
+    position: absolute;
+    left: 0;    
+    transform: scaleX(0); 
+    transition: transform 0.7s;
+    
+}
+
+.nav-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+.nav-link::before{
+    top: 0;
+    transform-origin: left;
+}
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scaleX(1);
+   
+}
+
+/* dsadsadsadsa */
+
+@media screen and (max-width: 1200px){
+
+body{ 
+   
+    height: 100%;
+    width: 100%;
+ 
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+
+    background-color: gray;
+  
+  
+}
+header{
+ grid-column: 1/4;
+
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 35px;
+
+  
+}
+
+section{
+    grid-column: 1/4;
+ 
+    font-family: 'Montserrat';
+    font-size: large;  
+
+}
+
+#section_butter{
+    display: grid;
+    grid-template-columns: 15vw 33vw 33vw;
+    grid-template-rows: 10vh 33vh 33vh;
+  
+}
+table{
+   
+background-color: yellow;
+
+grid-column: 2/4;
+ grid-row: 2/4;
+}
+#secion_table:hover{
+    background-color: transparent;
+    color: yellow;
+    
+}
+
+
+#section_Mikado{
+  
+     display: grid;
+      grid-template-columns: 15vw 33vw 33vw;
+      grid-template-rows: 15vh 33vh 33vh;
+ 
+    
+
+ }
+ 
+ 
+
+ #section_lalonde{
+   
+  
+     display: grid;
+     grid-template-columns: 15vw 33vw 33vw;
+     grid-template-rows: 15vh 33vh 33vh;
+     
+ }
+
+
+footer{
+    /* grid-area: grid_footer; */
+    grid-column: 1/5;
+    grid-row: 4/5;
+   
+    text-align: center;
+    color: white;
+   
+}
+
+
+table{
+   
+     width: 100%;
+    border: 1px solid black;
+    background-color: yellow;
+    /* grid-column: 2/3; */
+
+
+} 
+}

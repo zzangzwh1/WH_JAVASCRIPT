@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+/* font-family: 'RocknRoll One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+/* font-family: 'Orbitron', sans-serif; */
+body{
+    display: grid;
+    grid-template-areas: " g_header  g_header  g_header  g_header"
+                        "g_aside g_section g_section g_nav "
+                        ".  g_section g_section  g_nav"
+                        ".  g_section g_section  g_nav"
+                        ".  g_section g_section ."
+                        " g_footer  g_footer  g_footer  g_footer ";
+                        font-family: Orbitron ;
+                        background-color: rgb(212, 211, 211);
+                        gap: 20px;
+    
+}
+header{
+    grid-area: g_header;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+h1{
+    text-align: center; 
+    text-shadow: 2px 2px black;
+    color: white;
+}
+#options{
+    background-color: yellow;
+    width: 70%;
+}
+aside{
+    grid-area: g_aside;
+  
+}
+section{
+    grid-area: g_section;
+    background-color: rgb(209, 204, 197);
+}
+nav{
+    grid-area: g_nav;
+ 
+    border: 5px solid red;
+}
+footer{
+    grid-area: g_footer;
+    background-color: white;
+    text-align: center;
+    background-color: blanchedalmond;
+    text-align: center; 
+    text-shadow: 1px 1px black;
+    color: white;
+    font-size: 20px;
+
+}
+img{
+    width: 100%;
+}

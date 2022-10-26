@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sdytiuk ICA06 Moto Purchase!</title>
+    <link rel="stylesheet" type="text/css" href="./ica6(Jquery).css" />
+    <script src="./ica6(Jquery).js" type="text/JavaScript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            ica06 Motorcycle Purchase Form - sdytiuk
+        </header>
+       
+        <form name="myForm" action="https://thor.net.nait.ca/~demo/cmpe2000/ica04_formtest.php" method="get">
+            
+            <label>
+                Brand:
+            </label>
+            <section>
+                <select id="motoType" name="motoType" size='5'>
+                    <option value="" selected>Please pick one:</option>
+                    <option value="Honda">Japanese</option>
+                    <option value="Aprilia">European</option>
+                    <option value="Harley">American</option>
+                </select>
+                <span id="motoPic">
+                    <img id="thePic">
+                </span>
+            </section>
+       
+            <label>
+                Model:
+            </label>
+            <section>
+                <label><input type="radio" name="model" value="5000">Scooter</label><br>
+                <label><input type="radio" name="model" value="10000">Naked</label><br>
+                <label><input type="radio" name="model" value="15000">Rocket</label><br>
+            </section>
+            
+            <label>
+                Options:
+            </label>
+            <section>
+                <label><input type="checkbox" name="ABS" value="200">Automatic Braking System</label><br>
+                <label><input type="checkbox" name="TCS" value="300">Traction Control System</label><br>
+                <label><input type="checkbox" name="FMM" value="500">Flight Mode Mapping</label>
+            </section>
+            
+            <label>
+                Pre-Payment:
+            </label>
+            <section>
+                <input type="text" name="downpayment" value="0">
+            </section>
+            
+            <section id="submitButton">
+                <input type="submit" class="submit" value="Let's Buy">
+                <input type="hidden" name="total">
+            </section>
+            <section id="feedback">
+
+            </section>
+
+        </form>
+        
+        <footer>
+            <p>&#xA9; 2019 by Estebandito
+                <br>
+                Last modified <time datetime="2019-10-17">10/17/2019</time><br>
+                Vete a <a href="../../../index.html">casa.</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

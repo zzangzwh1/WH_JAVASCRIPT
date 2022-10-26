@@ -1,0 +1,187 @@
+
+
+header{
+    background-color: orange;
+    text-align: center;
+   
+}
+
+
+
+
+
+footer{
+    background-color: orange;
+    text-align: center;
+}
+
+
+.result{
+    display: block;
+    width: 90%;
+}
+ label{
+   
+   font-weight: bold;
+} 
+select{
+    background-color: yellow;
+    width: 40%;
+     text-align-last: center; 
+  
+}
+option{
+    text-indent: 40%;
+    color: red;
+} 
+
+
+
+
+/* #btn1,#btn2{
+  width: 90%;
+} */
+@media screen and (min-width: 400px){
+    #grid{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 90vw;
+         grid-template-rows: 10vh 33vh 20vh; 
+ 
+        grid-template-areas: "grid_header"
+                             " grid_form"                                         
+                  
+                             "grid_footer";
+                    background-color: gray;      
+                
+        
+    }
+    header {
+        grid-area: grid_header;
+    }
+    form{
+        grid-area: grid_form;
+        background-color: rgb(140, 140, 199);
+    }
+    footer{
+        grid-area: grid_footer;
+    }
+    header{
+        background-color: orange;
+        text-align: center;
+    }  
+   img{
+       visibility: hidden;
+   }
+   select{
+   display: block;
+}
+
+   
+   
+        
+    
+    
+
+  
+}
+@media screen and (min-width: 800px){
+    #grid{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 20vw 30vw 30vw 20vw;
+         grid-template-rows: 10vh 33vh 20vh; 
+ 
+        grid-template-areas: "grid_header grid_header grid_header grid_header "
+                             "grid_aside grid_form grid_form grid_nav"                                         
+                  
+                             "grid_footer grid_footer grid_footer  grid_footer";
+                          
+                
+        
+    }
+    header {
+        grid-area: grid_header;
+    }
+     
+    form{
+        background-color: gray;
+         grid-area: grid_form; 
+         padding :5px;
+       
+        gap: 25px;
+        display: grid;
+        grid-auto-columns: auto auto;
+    }
+    .f_name{
+        grid-column: 1/2;
+    }
+    .l_name{
+        grid-column: 2/3;
+    }
+    .reset_btn{
+       
+        grid-column: 1/3;
+    }
+    .submit_btn{
+        grid-column: 1/3;
+    }  
+
+
+    select{
+        display: inline;
+    }
+   
+   
+    
+   
+    footer{
+        grid-area: grid_footer;
+    }
+    header{
+        background-color: orange;
+        text-align: center;
+    }  
+    aside{
+        grid-area: grid_aside;
+  
+        background-image: url(./images/band5_royalty.jpg);
+    }
+   
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    nav{
+        grid-area: grid_nav;
+        background-image: url(./images/band1_paragon.jpg);
+    
+     
+    } 
+   
+   
+        
+    
+    
+
+  
+}
+
+/* 
+form{
+    display: grid;
+    grid-auto-columns: auto auto;
+
+}
+#pass{
+    grid-column: 1/2;
+}
+#range{
+    grid-column: 2/3;
+}
+#comment{
+    grid-column: 1/3;
+}
+#buttons{
+    grid-column: 1/3;
+} */

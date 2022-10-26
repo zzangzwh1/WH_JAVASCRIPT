@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Fun Page</title>
+    <style>
+        header {
+            font-size: large;
+            color: purple; 
+            background-color: grey; 
+            text-align: center;              
+        }
+        .form {
+            display:grid;
+            grid-template-columns: 50% 50%;
+        }
+        button {
+            color: blue;
+            background-color: cyan;
+        }
+        .chart{
+            border: 10px solid chartreuse;
+        }
+    </style>
+    <script src="myjs.js"></script>
+</head>
+<body>
+    <header>JS Fun Page</header>
+    <section>
+        <button type="button" id="ColorMeRed">Color Me Red</button>
+    </section>
+    <section class="form">
+        <form action="#" method="get" name="myForm">
+            <label>Your name: <input type="text" name="username" id="uname"></label>
+            <button type="button" id="GreetMe">Greet Me!</button><br>
+            <label>How many pies would you like? <input type="text" name="numpies" id="thenumberofpies"></label>
+            <button type="button" id="MakePies">Make Pies</button>
+            <button type="button" onclick="alert('hi');">Random Button</button>
+            
+        </form>
+    </section>
+    <section id="pies">
+
+    </section>
+</body>
+</html>

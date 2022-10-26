@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./(ica04)style.css">
+    <title>ICA04</title>
+</head>
+<body id="grid">
+    <header>
+        <h1>ICA04 - CSS Grid Form</h1>        
+    </header>
+
+        <form action="https://thor.net.nait.ca/~demo/cmpe2000/ica04.php" method="POST">
+
+            <input type="hidden" name="Invisible" value="cmpe2000">   
+            <section class="f_name">
+            
+            <label for="XYZ" class="firstName">UserName: 
+                 <input id="XYZ" class="result" type="Text" name="UserName"  placeholder="Enter Username" required >
+                </label> 
+            </section>
+                <section class="l_name">
+            <label for="password" class="lastName">Password:
+                 <input id="password" class="result" type="Password" name="Password" placeholder="Enter password" maxlength="8"  >
+                </label>
+                </section>
+                 <section class="field">
+            <fieldset>
+                <legend> <label> Whom do you love?</label></legend>
+                    <input type="radio" name="Fanboy" value="Star Wars" required><label> Luke</label> <br>
+                    <input type="radio" name="Fanboy" value="Star Trek" required> <label> Kirk</label> <br>
+                    <input type="radio" name="Fanboy" value="Futurama" required> <label> Bender</label>                
+                </fieldset>    
+            </section>     
+            <section class="HowMuch">
+              <label for="HowMuch">How Much? 
+             <input type="range" min="10" max="20" name="HowMuch" id="howMuch" >
+            </label> 
+            </section>
+         
+            <section class="select">
+            <label id="choice"> Choice of Ride: </label>            
+                  <select name="Moto" >
+                    <option value="BMW">  Germany   </option>
+                            <option value="Ducati">Italy</option>
+                            <option value="Japan">Honda</option>
+                            <option value=" Triumph">UK</option>
+            </select>
+            </section>
+        <section class="light">
+                <label >Lights</label>         
+                <input type="checkbox" name="Lights" checked >
+        </section>
+ 
+          <section class="reset_btn">
+
+              <input type="reset" value="Reset Now" class="result" id=btn1>
+            </section>
+            <section class="submit_btn">
+
+                <input type="submit" value="Lets Go!" class="result" id="btn2">
+            </section>
+        
+
+            
+        </form>
+  
+   
+    <aside> <img src="./images/band1_paragon.jpg" alt="Pargon"></aside>
+    <nav> <img src="./images/band5_royalty.jpg" alt="Royalty"></nav>
+
+    <footer>    
+        <script>document.write('<pre>&copy;2020 by wonhyuk cho\nLast Modified:' +
+            document.lastModified);</script><a href="./index.html">home</a>
+    </footer>
+    
+</body>
+</html>

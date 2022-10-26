@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="(ICA06)style.css">
+    <script src="ICA06.js"></script>
+    <title>ICA06 Wonhyuk Cho</title>
+</head>
+
+<body>
+    <header>
+        <h1> ICA06 MotorCycle Purchase Form</h1>
+
+    </header>
+   <section id="section_main">
+    <form action="/~demo/cmpe2000/ica04_formtest.php" method="POST" name="myForm" >
+        <!-- <section id="section_brand"> -->
+            <label for="Brand" id="lbl_brand">Brand: </label>
+            <select name="B_Select" id="Brand" size="4">
+                <option value="">Please Pick One :</option>
+                <option value="Honda">Japanese</option>
+                <option value="Ducati">European</option>
+                <option value="Harley">American</option>
+            </select>
+            <img src="./images/empty_Motor.jpg" alt="empty_Motor" width="200px" height="100px"  id="imgResult">
+
+        <!-- </section> -->
+    
+            <label for="Model" id="lbl_model" > Model:</label>
+            
+            <section id="section_model">
+            <input type="radio" name="Model" value="5000" id="rBtn"> </input><label for="rBtn">Scooter</label>  
+            <input type="radio" name="Model" value="10000" id="rBtn_2"> </input> <label for="rBtn_2"> Naked</label> 
+            <input type="radio" name="Model" value="15000" id="rBtn_3"></input> <label for="rBtn_3">Roceket</label> 
+             </section>
+      
+                <label for="option" id="lbl_option"> Option: </label>
+        <section id="section_option">
+               <input type="checkbox" id="brake" name="checkBox" value="200" ><label for="brake">Automatic Braking System</label> <br>
+                <input type="checkbox" id="control" name="checkBox" value="300" ><label for="control">Traction Control System</label><br>
+                <input type="checkbox" id="flight" name="checkBox" value="500" ><label for="flight">Flight Mode Mapping</label>
+         </section>
+
+         <label for="payment" id="lbl_payment" > Pre-Payment : </label>
+        
+                <input type="text" id="payment" name="downPayment" value="0">
+     
+                 <div>
+                     <!-- <input type ="hidden" id="textValue2"> -->
+                <label for="" id="textValue" name="textValueResult"></label>
+                <label for="" id="textValue2" name="textValueResult2"></label>
+               
+                </div>
+                <input type="submit" value="Let's Buy" id="btn_submit" >
+
+      
+    </form>
+</section>
+    <footer >
+     <h2>     &copy;2021 Wonhyuk Cho<br/>
+        <script>document.write('Last Modified:' + document.lastModified);</script></h2>
+       
+      
+    </footer>
+</body>
+</html>

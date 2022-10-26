@@ -1,0 +1,57 @@
+div {
+    display: grid;
+    grid-template-columns: 48vw 48vw;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+section {
+    border: 3px solid blue;
+    background-size: 50vw;
+}
+#yeg {
+    background-image: url('./images/yeg_tarmac.jpg');
+    
+}
+#yvr {
+    background-image: url('./images/yvr-ducks.jpg');
+    
+}
+#yhz {
+    background-image: url('./images/yhz_tarmac.jpg');
+   
+}
+#yyz {
+    background-image: url('./images/yyz_tarmac.jpg');
+    
+}
+
+img{
+    width:150px;
+    height: 30px;
+    border: solid red 2px;
+}
+header {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto repeat(5,200px) auto;
+    
+}
+#booking {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+}
+th {
+    width: 10vw;
+}
+h1, h4 {
+    display: inline;
+}
+
+table {
+    background-color: skyblue;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}

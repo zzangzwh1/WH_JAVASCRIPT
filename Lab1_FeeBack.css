@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&display=swap');
+/* font-family: 'PT Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Montserrat:wght@300&family=PT+Sans&display=swap');
+/* font-family: 'Lemonada', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lemonada:wght@300&family=Montserrat:wght@300&family=PT+Sans&display=swap');
+/* font-family: 'Crimson Text', serif; */
+#feeback_body{
+  background-image: url(./images/realFeed.jpg);
+    background-size: cover;
+ display: grid;
+ grid-template-columns: 33vw 33vw 33vw;
+ grid-template-rows: 20vh 30vh 20vh;
+ gap: 10px;
+ font-family: 'Crimson Text';
+ 
+}
+
+#feeback_header{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Montserrat';
+    grid-column: 1/6;
+    grid-row: 1/2;
+
+}
+#feeback_header_form{
+    background-color: whitesmoke;
+   border: 5px solid blue;
+    width: 54%;
+    opacity: 0.9;
+ 
+    grid-column: 2/5;
+    grid-row: 2/5;
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: 5vw 10vw 10vw 10vw;
+    grid-template-rows: 5vh 5vh 5vh 5vh 5vh;
+    gap: 5px;
+
+}
+.f_name{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.Email{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.address{
+    grid-row: 3/4;
+    grid-column: 4/5;
+    color: red;
+    font-size: 20px;
+}
+.field{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    color: red;
+    font-size: 20px;
+}
+.select{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    color: red;
+    font-size: 20px;
+}
+.phone{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    color: red;
+    font-size: 20px;
+}
+.myNait_form_textArea{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    color: red;
+    font-size: 20px;
+}
+.reset_btn{
+    grid-row: 7/8;
+    grid-column: 2/4;
+ 
+}
+.submit_btn{
+    grid-row: 7/8;
+    grid-column: 3/5;
+}
+#btn1{
+ background-color: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    border:3px solid black;
+}
+#btn1:hover{
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    border:5px solid red;
+}
+#btn2{
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    border:3px solid black; 
+}
+#btn2:hover{
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    border:5px solid red;
+}
+#feedbac_name{
+    color: red;
+    font-size: 20px;
+}
+#feedbac_email{
+    color: red;
+    font-size: 20px;
+}
+
+#user,#email,#cell,#textArea,#add {
+    border: 3px solid red;  
+}
+#grade{
+    border: 3px solid red;  
+}
+
+
+#feeback_footer{
+    background-color:transparent;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    grid-column: 1/6;
+    grid-row: 5/6;
+}
+@media screen and (max-width: 1200px){
+    #feeback_body{
+        background-image: url(./images/realFeed.jpg);
+          background-size: cover;
+       display: grid;
+       grid-template-columns: 5vw 43vw 33vw;
+       grid-template-rows: 20vh 50vh 20vh;
+       gap: 10px;
+       font-family: 'Crimson Text';
+       
+      }
+      
+      #feeback_header{
+          text-align: center;
+          font-size: 35px;
+          font-family: 'Montserrat';
+          grid-column: 1/6;
+          grid-row: 1/2;
+      
+      }
+      #feeback_header_form{
+          background-color: whitesmoke;
+         border: 5px solid red;
+          width: 100%;
+          
+          opacity: 0.9;
+       
+          grid-column: 2/5;
+          grid-row: 2/5;
+         
+          display: grid;
+          grid-template-columns: 5vw 10vw 10vw 10vw 10vw 10vw 10vw ;
+          grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh 10vh 10vh;
+          gap: 5px;
+      
+      }
+      .f_name{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .Email{
+        grid-column: 3/6;
+        grid-row: 2/3;
+    }
+    .address{
+        grid-row: 3/4;
+        grid-column: 3/4;
+        color: red;
+        font-size: 20px;
+    }
+    .field{
+        grid-row: 6/7;
+        grid-column: 3/8;
+        color: red;
+        font-size: 20px;
+       
+    }
+    .select{
+        grid-row: 8/9;
+        grid-column: 3/8;
+        color: red;
+        font-size: 20px;
+    }
+    .phone{
+        grid-row: 9/11;
+        grid-column: 1/9;
+        color: red;
+        font-size: 20px;
+    }
+    .myNait_form_textArea{
+        grid-column: 3/6;
+        grid-row: 10/12;
+        color: red;
+        font-size: 20px;
+    }
+    .reset_btn{
+        grid-row: 14/15;
+        grid-column: 2/8;
+     
+    }
+    .submit_btn{
+        grid-row:13/14;
+        grid-column: 2/8;
+    }
+    #btn1{
+     background-color: red;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        color: white;
+        font-size: 40px;
+        border:3px solid black;
+    }
+    #btn1:hover{
+        cursor: pointer;
+        background-color: white;
+        color: red;
+        border:5px solid red;
+    }
+    #btn2{
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        color: white;
+        font-size: 40px;
+        border:3px solid black; 
+    }
+    #btn2:hover{
+        cursor: pointer;
+        background-color: white;
+        color: red;
+        border:5px solid red;
+    }
+    #feedbac_name{
+        color: red;
+        font-size: 20px;
+    }
+    #feedbac_email{
+        color: red;
+        font-size: 20px;
+    }
+    
+    #user,#email,#cell,#textArea,#add {
+        border: 3px solid red;  
+    }
+    #grade{
+        border: 3px solid red;  
+    }
+}
